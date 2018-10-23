@@ -12,6 +12,31 @@
   </head>
   <body>
     <img src="images/img_1.jpg" alt="">
-
   </body>
+  <noscript>Your browser does not support JavaScript!</noscript>
+
+  <script type="text/javascript">
+    
+    if('serviceWorker' in navigator) {
+      navigator.serviceWorker.register("/service-worker.js")
+        .then(function() {
+          console.log('Service Worker Registered'); 
+        })
+    }
+    
+    /*
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+          .then(registration => {
+            console.log('Service Worker is registered', registration);
+          })
+          .catch(err => {
+            console.error('Registration failed:', err);
+          });
+        });
+      }
+    */
+  </script>
+  
 </html>
