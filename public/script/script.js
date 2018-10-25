@@ -11,3 +11,4 @@ function randfromarray()
 setInterval(function(){
     document.querySelector("img").src="images/image" + randfromarray() + ".jpg";
 },intravel)
+//change
